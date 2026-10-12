@@ -15,7 +15,7 @@ import fashion_detector as fs
 conn = mysql.connector.connect(
 host="localhost",
 user="root",
-password="shripad2005",
+password="123456",
 database="project_data"
 )
 cursor = conn.cursor()
@@ -177,14 +177,14 @@ class ImageViewer(QMainWindow):
             self.image_label.setPixmap(pixmap.scaled(self.image_label.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
 
 
-faceProto = "S:/Projects/Advertisement personalisation system for digital screens/models/opencv_face_detector.pbtxt"
-faceModel = "S:/Projects/Advertisement personalisation system for digital screens/models/opencv_face_detector_uint8.pb"
+faceProto = "../models/opencv_face_detector.pbtxt"
+faceModel = "../models/opencv_face_detector_uint8.pb"
 
-ageProto = "S:/Projects/Advertisement personalisation system for digital screens/models/age_deploy.prototxt"
-ageModel = "S:/Projects/Advertisement personalisation system for digital screens/models/age_net.caffemodel"
+ageProto = "../models/age_deploy.prototxt"
+ageModel = "../models/age_net.caffemodel"
 
-genderProto = "S:/Projects/Advertisement personalisation system for digital screens/models/gender_deploy.prototxt"
-genderModel = "S:/Projects/Advertisement personalisation system for digital screens/models/gender_net.caffemodel"
+genderProto = "../models/gender_deploy.prototxt"
+genderModel = "../models/gender_net.caffemodel"
 
 MODEL_MEAN_VALUES = (78.4263377603, 87.7689143744, 114.895847746)
 ageList = ['(0-4)', '(4-10)', '(10-15)', '(15-18)', '(18-28)', '(30-40)', '(40-50)', '(50-75)']

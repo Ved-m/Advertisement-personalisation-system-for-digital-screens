@@ -19,7 +19,7 @@ def load_model():
     global args
     global imgsz
     parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', type=str, default='content\yolov5\\runs\\train\exp\weights\last.pt', help='Path to custom model weights')
+    parser.add_argument('--weights', type=str, default='runs/train/exp/weights/last.pt', help='Path to custom model weights')
     parser.add_argument('--img-size', type=int, default=640, help='Inference size (pixels)')
     parser.add_argument('--conf-thres', type=float, default=0.25, help='Confidence threshold for detections')
     parser.add_argument('--iou-thres', type=float, default=0.45, help='IoU threshold for non-maximum suppression')
